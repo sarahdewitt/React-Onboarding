@@ -1,14 +1,23 @@
-import React from "react";
 import "../styles/Home.css";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import NewsGrid from "./NewsGrid";
+import InnerPage from "./InnerPage";
+import Comments from "../components/Comments";
 
 function Home() {
   return (
-    <>
-      <h1 className="py-20 w-full text-center text-cyan-900 font-bold text-4xl">
-        Hello World
-      </h1>
-      <div className="box"></div>
-    </>
+    <Router>
+      <div className='mx-auto bg-zinc-100	'>
+          <Routes>
+            <Route path='/' element={<NewsGrid />}/>
+            <Route path="/post/:id">
+              <Route index element={<InnerPage />} />
+              <Route path=":id/comments" element={<Comments />}/>
+            </Route>
+            
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
