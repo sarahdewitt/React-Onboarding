@@ -1,4 +1,4 @@
-const Header = () => {
+const Title = () => {
     return (
       <div className='text-center mx-auto lg:w-3/4'>
           <h1 className='text-4xl	font-bold text-indigo-900 py-6'>Latest News</h1>
@@ -7,5 +7,5 @@ const Header = () => {
     )
   }
   
-  export default Header
+  export default Title
   

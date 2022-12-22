@@ -6,7 +6,7 @@ const Post = ({ post }) => {
   return (
     <div className='max-w-sm rounded overflow-hidden shadow-md pb-3 rounded-lg bg-white mx-auto'>
         <div className='relative'>
-          <img src={img} alt='' className='rounded-t-lg w-full' />
+          <img src={img} alt='News Image' className='rounded-t-lg w-full' />
           <div className='absolute bottom-0 right-0 p-3'>
           <span className='bg-indigo-900 bg-opacity-75 rounded-full px-3 py-1 text-sm font-semibold text-white'>News</span>
           </div>

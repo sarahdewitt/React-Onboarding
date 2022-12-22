@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Posts from '../components/Posts'
 import Banner from '../components/Banner'
-import Header from '../components/Header'
+import Title from '../components/Title'
 
 const NewsGrid = () => {
     const [posts, setPosts] = useState([])
@@ -24,8 +24,8 @@ const NewsGrid = () => {
     return (
         <>
             <Banner /> 
-            <div className='px-14 lg:px-32'>
-                <Header />
+            <div className='container mx-auto'>
+                <Title />
                 <div className='grid py-10 lg:grid-cols-3 gap-x-10 gap-y-10'>
                     <Posts posts={posts} />
                 </div>
